@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Наши курсы{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Наши курсы</h1>
+        {% for el in courses %}
+            <div class="alert alert-dark">
+            <img src="{% static 'main/img/artificial-intelligence-2.png' %}">
+            <h3> {{ el.title }}</h3>
+            <h5> {{ el.sphere }}</h5>
+            <h7> {{ el.description }}</h7>
+            <p> Время для изучения: {{ el.learningHours }} часов</p>
+            <button class="btn btn-warning btn-lg btn-block">Просмотреть курс</button>
+            </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

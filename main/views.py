@@ -1,15 +1,24 @@
 from django.shortcuts import render
 
 
-# Create your views here.
-
 def index(request):
     data = {
-        'title': 'Главная страница',
-        'values': ['sdcs','edcsde','rferf']
+        'title': 'Главная',
+        'mainText': 'Освой новую сферу или улучши уровень уже имеющиехся знаний с помощью нашей онлайн-платформы '
+                    'YourCourse. \nДесятки курсов самых разных направлений, находящихся под рукой в любое время. '
+                    'Онлайн-обучение, которое будет удобно каждому. \n\nНе жди! Присоединяйся.\n',
+        'coolThing1': '\nВ любой момент можно продолжить обучение\n\n',
+        'coolThing2': '\nВыбирай из множества областей\n\n',
+        'coolThing3': '\nПостоянно развивайся\n\n',
     }
-    return render(request, 'main/index.html',data)
+    return render(request, 'main/index.html', data)
 
 
 def about(request):
-    return render(request, 'main/about.html')
+    data = {
+        'title': 'Про проект',
+        'mainText': 'Проект "Автоматизированная Система Обучения".'
+                    '\n\nПодготовлен и выполнен студенткой Сорокиной Екатериной, группа 053504'
+                    '\n\n\n БГУИР ФКСиС 2022'
+    }
+    return render(request, 'main/about.html', data)
