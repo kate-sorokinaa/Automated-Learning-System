@@ -56,6 +56,10 @@ aside ul li{
     transition: transform .15s ease;
 }
 
+aside ul button{
+    margin-top: 20px;
+}
+
 aside ul a{
     text-decoration: none!important;
 }
@@ -102,6 +106,7 @@ main .features img{
 
 main .features ul{
     margin-left: 10%;
+    list-style-type: none;
 }
 
 main .features ul h5{
@@ -117,11 +122,27 @@ main .features ul img{
     margin-top: 25px;
 }
 
+.form{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 40px 34%;
+    text-align: center;
+}
+
 .alert-dark{
     float: left;
     clear: both;
     width: 400px;
     margin: 40px 34%;
+    text-align: center;
+}
+
+.alert-light{
+    float: left;
+    clear: both;
+    width: 95%;
+    margin: 20px 20%;
     text-align: center;
 }
 
@@ -132,4 +153,10 @@ main .features ul img{
     margin: 10px 8% 5px;
 }
 
-
+.btn-group{
+    float: left;
+    clear: both;
+    width: 95%;
+    margin: 20px 5%;
+    text-align: center;
+}

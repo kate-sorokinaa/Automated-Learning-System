@@ -19,8 +19,10 @@
         <ul>
             <a href="{% url 'home' %}"><li><i class="bi bi-book"></i> Главная</li></a>
             <a href="{% url 'home' %}"><li><i class="bi bi-person"></i> Профиль</li></a>
-            <a href="{% url 'courses_home' %}"><li><i class="bi bi-journal-code"></i> Курсы</li></a>
+            <a href="{% url 'home' %}"><li><i class="bi bi-journal-code"></i> Курсы</li></a>
             <a href="{% url 'about' %}"><li><i class="bi bi-info-circle"></i> Про проект</li></a>
+            <a href="{% url 'login' %}"><li><button class="btn btn-outline-light">Вход</button></li></a>
+            <a href="{% url 'register' %}"><li><button class="btn btn-outline-light">Регистрация</button></li></a>
         </ul>
     </aside>
     <main>

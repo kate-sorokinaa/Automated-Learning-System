@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Прохождение курса{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Прохождение курса</h1>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" onclick="">Блок 1</button>
+                <button type="button" class="btn btn-secondary">Блок 2</button>
+                <button type="button" class="btn btn-secondary">Блок 3</button>
+            </div>
+            <div class="alert alert-light">
+            <h5> {{ text }}</h5>
+            <button class="btn btn-outline-dark btn-block">Курс пройден</button>
+            </div>
+    </div>
+{% endblock %}
