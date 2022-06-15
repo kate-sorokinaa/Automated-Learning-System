@@ -7,5 +7,8 @@ def courses_home(request):
     return render(request, 'courses/courses_home.html', {'courses': courses})
 
 
-def learn(request):
+def learn(request, course):
+    courses = Course.objects.all()
     return render(request, 'courses/learn.html')
+
+

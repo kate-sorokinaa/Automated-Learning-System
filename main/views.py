@@ -53,12 +53,9 @@ class RegisterFormView(FormView):
 
     success_url = "login/"
 
-    # Шаблон, который будет использоваться при отображении представления.
     template_name = "main/register.html"
 
     def form_valid(self, form):
-        # Создаём пользователя, если данные в форму были введены корректно.
         form.save()
 
-        # Вызываем метод базового класса
-        return super(RegisterFormView, self).form_valid(form)
+        return user_login(self)

@@ -9,6 +9,7 @@ class Course(models.Model):
     blokInfo1 = models.TextField('Блок с информацией 1', default='')
     blokInfo2 = models.TextField('Блок с информацией 2', default='')
     blokInfo3 = models.TextField('Блок с информацией 3', default='')
+    slug = models.SlugField(null=True)
 
     def __str__(self):
         return self.title
